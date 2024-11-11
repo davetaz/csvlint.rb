@@ -84,8 +84,6 @@ module Csvlint
       @warnings += @schema.warnings unless @schema.nil?
 
       @data = [] # it may be advisable to flush this on init?
-
-      validate
     end
 
     def validate
