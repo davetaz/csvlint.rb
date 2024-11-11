@@ -306,6 +306,7 @@ module Csvlint
     end
 
     def set_dialect
+      @dialect ||= {}
       @assumed_header = @dialect["header"].nil?
       @supplied_dialect = @dialect != {}
 
